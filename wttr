@@ -1,0 +1,4 @@
+#!/bin/bash
+CURRENTTIME=$(date +"%F-%H:%M:%S")
+
+curl wttr.in >> "weather-$CURRENTTIME"

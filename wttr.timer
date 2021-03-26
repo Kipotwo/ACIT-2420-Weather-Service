@@ -1,0 +1,10 @@
+[Unit]
+Description=a timer for wttr service
+Requires=wttr.service
+
+[Timer]
+Unit=wttr.service
+OnCalendar=hourly
+
+[Install]
+WantedBy=timers.target
